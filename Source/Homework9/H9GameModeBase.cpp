@@ -303,7 +303,7 @@ void AH9GameModeBase::JudgeGame(AH9PlayerController* InChattingPlayerController,
 	else
 	{
 		bool bIsDraw = true;
-		for (const auto& H9PlayerController : AllPlayerControllers)
+		for (const auto& H9PlayerController : InGamePlayerControllers)
 		{
 			AH9PlayerState* H9PS = H9PlayerController->GetPlayerState<AH9PlayerState>();
 			if (IsValid(H9PS) == true)
